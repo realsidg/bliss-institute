@@ -43,7 +43,7 @@ header.scrolled{border-color:var(--line)}
 .brand-mark{width:auto;height:46px}
 .brand b{font:600 20px/1 var(--serif)}
 .brand small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:4px}
-.nav ul{display:flex;gap:30px;list-style:none;font-size:15px;font-weight:500}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:15px;font-weight:500}
 .nav ul a{text-decoration:none;opacity:.8}
 .nav ul a:hover{opacity:1}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;background:var(--forest);color:var(--paper);text-decoration:none;font-weight:600;font-size:15px;transition:transform .2s,background .2s}
@@ -140,6 +140,26 @@ header.scrolled{border-color:var(--line)}
 .svc.cta{grid-column:span 2;background:var(--saffron-soft)}
 .svc.cta p{color:var(--ink)}
 .svc.cta .num{color:var(--forest)}
+
+/* detox */
+.detox{background:var(--paper)}
+.dx-group{font-size:26px;margin:8px 0 22px}
+.dx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.dx{display:grid;grid-template-columns:48px 1fr;gap:18px;padding:26px;border-radius:20px;background:var(--card);border:1px solid var(--line);transition:border-color .3s,transform .3s}
+.dx:hover{border-color:var(--saffron);transform:translateY(-2px)}
+.dx svg,.yk svg{width:44px;height:44px;color:var(--forest)}
+.dx h3{font-size:21px;margin-bottom:6px}
+.dx p{font-size:15px;color:var(--ink-soft)}
+.yk-wrap{margin-top:40px;border-radius:28px;background:var(--forest-deep);color:var(--paper);padding:clamp(28px,4.5vw,52px);display:grid;grid-template-columns:.7fr 2.3fr;gap:36px;align-items:start}
+.yk-head h3{font-size:clamp(28px,3.2vw,38px);font-weight:300;margin:12px 0}
+.yk-head p{color:rgba(246,241,231,.75);font-size:16px}
+.yk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.yk{padding:24px;border-radius:20px;border:1px solid rgba(246,241,231,.18);background:rgba(246,241,231,.04)}
+.yk svg{color:var(--saffron-soft);margin-bottom:16px}
+.yk h3{font-size:24px;margin:8px 0 8px}
+.yk p{font-size:15px;color:rgba(246,241,231,.75)}
+@media (max-width:960px){.dx-grid{grid-template-columns:1fr 1fr}.yk-wrap{grid-template-columns:1fr}}
+@media (max-width:640px){.dx-grid,.yk-grid{grid-template-columns:1fr}}
 
 /* process */
 .process{background:var(--forest-deep);color:var(--paper)}
@@ -282,9 +302,10 @@ footer{padding:48px 0;font-size:14px;color:var(--ink-soft)}
       <span><b>Institute</b><small>Yoga · Acupuncture · Naturopathy</small></span>
     </a>
     <ul id="menu">
-      <li><a href="#about">Dr. Sunita Garg</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#philosophy">Philosophy</a></li>
       <li><a href="#services">Therapies</a></li>
+      <li><a href="#detox">Detox</a></li>
       <li><a href="#videos">Videos</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#visit">Visit</a></li>
@@ -505,6 +526,28 @@ footer{padding:48px 0;font-size:14px;color:var(--ink-soft)}
         <p>Tell us what you're facing. After the diagnosis, Dr. Garg will recommend the combination of therapies that fits you.</p>
         <a class="btn" href="tel:+918958956439" style="margin-top:22px">Call +91 89589 56439</a>
       </article>
+    </div>
+  </div>
+</section>
+
+<section class="detox" id="detox">
+  <div class="wrap">
+    <div class="svc-head reveal">
+      <div>
+        <span class="eyebrow">Detox &amp; cleansing</span>
+        <h2>Cleanse the body, and it heals itself.</h2>
+      </div>
+      <p class="lead" style="max-width:44ch">Naturopathy and classical yogic cleansing methods, chosen for you after diagnosis, to clear toxins and restore the body's own healing power.</p>
+    </div>
+    <h3 class="dx-group reveal">Naturopathy detox therapies</h3>
+    <div class="dx-grid"><article class="dx reveal"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 10c-4 0-6 3-6 7v14c0 4 2 7 6 7h4M34 10c4 0 6 3 6 7v14c0 4-2 7-6 7h-4"/><path d="M14 10h20M18 38c0-5 12-5 12 0"/></svg><div><h3>Colon cleansing &amp; irrigation</h3><p>Enema and colon irrigation to clear accumulated toxins from the large intestine.</p></div></article><article class="dx reveal"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 30c4-3 8-3 12 0s8 3 12 0 8-3 8-3"/><path d="M8 38c4-3 8-3 12 0s8 3 12 0 8-3 8-3"/><rect x="12" y="10" width="24" height="12" rx="6"/></svg><div><h3>Mud &amp; wet packs</h3><p>Cooling mud packs and wet packs for the abdomen, eyes, head and spine to draw out heat and toxins.</p></div></article><article class="dx reveal"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8c-3 4 3 6 0 10M24 8c-3 4 3 6 0 10M32 8c-3 4 3 6 0 10"/><path d="M8 26h32v6a8 8 0 0 1-8 8H16a8 8 0 0 1-8-8z"/></svg><div><h3>Steam bath</h3><p>Full-body steam to open the pores and release toxins through sweat.</p></div></article><article class="dx reveal"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24h36v4a10 10 0 0 1-10 10H16A10 10 0 0 1 6 28z"/><path d="M12 24V12a4 4 0 0 1 8 0M14 38l-2 4M34 38l2 4"/></svg><div><h3>Tub &amp; hip baths</h3><p>Hydrotherapy tub baths and hip baths at chosen temperatures to stimulate circulation and the abdominal organs.</p></div></article><article class="dx reveal"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 8c-4 0-6 5-6 11 0 5 2 7 2 11 0 3-2 4-2 6a4 4 0 0 0 8 0c0-4 4-8 4-15 0-8-2-13-6-13z"/><path d="M6 40c6 3 30 3 36 0"/></svg><div><h3>Foot bath</h3><p>Warm or contrast foot baths to relax the body, ease congestion and improve sleep.</p></div></article><article class="dx reveal"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6c-5 0-8 6-8 13 0 6 3 8 3 13 0 3-2 5-2 7a5 5 0 0 0 10 0c0-5 5-9 5-18 0-9-3-15-8-15z"/><circle cx="20" cy="16" r="1.6" fill="currentColor"/><circle cx="23" cy="24" r="1.6" fill="currentColor"/><circle cx="19" cy="32" r="1.6" fill="currentColor"/></svg><div><h3>Foot reflexology</h3><p>Pressure on reflex points of the feet that correspond to the organs, to stimulate and balance them.</p></div></article></div>
+    <div class="yk-wrap reveal">
+      <div class="yk-head">
+        <span class="eyebrow" style="color:var(--saffron-soft)">Shatkarma</span>
+        <h3>Yogic cleansing methods</h3>
+        <p>Ancient hatha-yoga kriyas that purify the body from within, taught step by step and practised under guidance.</p>
+      </div>
+      <div class="yk-grid"><article class="yk reveal"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 20h18l8-6v4l-6 6H12a2 2 0 0 1-2-2z"/><path d="M30 24c2 4 2 8-1 12M34 28c1 3 1 6-1 9"/></svg><span class="eyebrow" style="color:var(--saffron-soft)">Nasal cleansing</span><h3>Jal Neti</h3><p>Lukewarm saline water poured through one nostril and out of the other, clearing the nasal passages and sinuses. Helpful for allergies, sinusitis and colds.</p></article><article class="yk reveal"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6v10c-6 2-10 7-10 14 0 7 6 12 14 12s14-5 14-12c0-9-8-10-12-14V6"/><path d="M14 30c3 2 7 2 10 0"/></svg><span class="eyebrow" style="color:var(--saffron-soft)">Stomach cleansing</span><h3>Kunjal Kriya</h3><p>Drinking lukewarm saline water on an empty stomach, then releasing it, to cleanse the stomach and reduce acidity and excess mucus.</p></article><article class="yk reveal"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c10 0 16 8 16 16 0 9-7 16-16 16-6 0-10-4-10-9 0-4 3-7 7-7 3 0 5 2 5 5"/><path d="M14 40l-4 4"/></svg><span class="eyebrow" style="color:var(--saffron-soft)">Digestive tract cleansing</span><h3>Shankh Prakshalan</h3><p>Lukewarm saline water taken with a specific sequence of yoga postures, flushing the whole tract from mouth to colon. Done only under supervision.</p></article></div>
     </div>
   </div>
 </section>

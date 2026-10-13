@@ -161,6 +161,27 @@ header.scrolled{border-color:var(--line)}
 @media (max-width:960px){.dx-grid{grid-template-columns:1fr 1fr}.yk-wrap{grid-template-columns:1fr}}
 @media (max-width:640px){.dx-grid,.yk-grid{grid-template-columns:1fr}}
 
+/* garbh sanskar */
+.garbh{background:linear-gradient(180deg,var(--paper-2),#f3e3cf)}
+.garbh-head{max-width:860px;margin-bottom:56px}
+.garbh-head h2 em{font-style:italic;color:var(--saffron)}
+.tri-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative}
+.tri{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:32px}
+.tri-ring{width:64px;height:64px;color:var(--saffron);margin-bottom:22px}
+.tri h3{font-size:28px;margin:10px 0 4px}
+.tri-sub{font:italic 300 19px var(--serif);color:var(--ink-soft);margin-bottom:18px}
+.tri ul{list-style:none;display:grid;gap:10px}
+.tri li{position:relative;padding-left:20px;font-size:15px;color:var(--ink-soft)}
+.tri li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--saffron-soft)}
+.garbh-band{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:28px;background:var(--forest);color:var(--paper);overflow:hidden}
+.gb-item{padding:36px 32px}
+.gb-item+.gb-item{border-left:1px solid rgba(246,241,231,.15)}
+.gb-item svg{width:44px;height:44px;color:var(--saffron-soft);margin-bottom:18px}
+.gb-item h3{font-size:24px;margin-bottom:8px}
+.gb-item p{font-size:15px;color:rgba(246,241,231,.78)}
+.garbh-note{margin-top:24px;font-size:14px;color:var(--ink-soft);max-width:80ch}
+@media (max-width:960px){.tri-grid,.garbh-band{grid-template-columns:1fr}.gb-item+.gb-item{border-left:0;border-top:1px solid rgba(246,241,231,.15)}}
+
 /* process */
 .process{background:var(--forest-deep);color:var(--paper)}
 .process .lead{color:rgba(246,241,231,.75)}
@@ -303,7 +324,7 @@ footer{padding:48px 0;font-size:14px;color:var(--ink-soft)}
     </a>
     <ul id="menu">
       <li><a href="#about">About</a></li>
-      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#garbh-sanskar">Garbh Sanskar</a></li>
       <li><a href="#services">Therapies</a></li>
       <li><a href="#detox">Detox</a></li>
       <li><a href="#videos">Videos</a></li>
@@ -552,6 +573,35 @@ footer{padding:48px 0;font-size:14px;color:var(--ink-soft)}
   </div>
 </section>
 
+<section class="garbh" id="garbh-sanskar">
+  <div class="wrap">
+    <div class="garbh-head reveal">
+      <span class="eyebrow">Our speciality · Garbh Sanskar</span>
+      <h2>A drugless, joyful pregnancy, and a <em>specially gifted</em> child.</h2>
+      <p class="lead">Garbh Sanskar is the ancient Indian science of nurturing a child from the womb. We guide mothers through every trimester with yoga, pranayama, meditation and diet, for a baby who is strong physically, mentally and spiritually.</p>
+    </div>
+    <div class="tri-grid"><article class="tri reveal"><svg class="tri-ring" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-opacity=".2" stroke-width="4"/><circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-dasharray="54.5 163.4" transform="rotate(-90 32 32)"/><circle cx="32" cy="32" r="9.3" fill="currentColor" fill-opacity=".85"/></svg><span class="eyebrow">Weeks 1–12</span><h3>First trimester</h3><p class="tri-sub">Settling body and mind</p><ul><li>Gentle breathing and deep relaxation (Yoga Nidra)</li><li>Positive sankalp and daily meditation</li><li>Diet and natural relief for nausea and fatigue</li></ul></article><article class="tri reveal"><svg class="tri-ring" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-opacity=".2" stroke-width="4"/><circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-dasharray="108.9 163.4" transform="rotate(-90 32 32)"/><circle cx="32" cy="32" r="12.7" fill="currentColor" fill-opacity=".85"/></svg><span class="eyebrow">Weeks 13–27</span><h3>Second trimester</h3><p class="tri-sub">Strength and bonding</p><ul><li>Safe, gentle asanas for back, hips and posture</li><li>Nadi Shodhana and Bhramari pranayama</li><li>Garbh samvad: talking, music and mantra with the baby</li></ul></article><article class="tri reveal"><svg class="tri-ring" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-opacity=".2" stroke-width="4"/><circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-dasharray="163.4 163.4" transform="rotate(-90 32 32)"/><circle cx="32" cy="32" r="16.0" fill="currentColor" fill-opacity=".85"/></svg><span class="eyebrow">Weeks 28–40</span><h3>Third trimester</h3><p class="tri-sub">Preparing for birth</p><ul><li>Pelvic-opening postures and supported squats</li><li>Birthing breath and relaxation for labour</li><li>Acupressure points for the right stage of pregnancy</li></ul></article></div>
+    <div class="garbh-band reveal">
+      <div class="gb-item">
+        <svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40c-9-6-16-12-16-20a8 8 0 0 1 16-3 8 8 0 0 1 16 3c0 8-7 14-16 20z"/><path d="M18 22c2 2 4 3 6 3s4-1 6-3"/></svg>
+        <h3>Meditation for a gifted child</h3>
+        <p>Special meditation and visualisation methods help the mother stay calm and positive, shaping the baby's health, intelligence and inner nature.</p>
+      </div>
+      <div class="gb-item">
+        <svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c6 8 10 14 10 20a10 10 0 0 1-20 0c0-6 4-12 10-20z"/><path d="M19 28a5 5 0 0 0 5 5"/></svg>
+        <h3>Drugless care, start to finish</h3>
+        <p>Nausea, acidity, constipation, back pain, swelling, sleeplessness and anxiety are eased with diet, yoga, acupressure and naturopathy, without medicines wherever possible.</p>
+      </div>
+      <div class="gb-item">
+        <svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="5"/><circle cx="24" cy="24" r="13"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6"/></svg>
+        <h3>Preparing for normal delivery</h3>
+        <p>Pranayama, asanas and acupressure points are taught so the mother's body is ready for a natural, normal delivery.</p>
+      </div>
+    </div>
+    <p class="garbh-note reveal">Garbh Sanskar works alongside, never instead of, regular check-ups with your gynaecologist. Practices are chosen for each mother's health and stage of pregnancy, and any medical need is always referred. Terms and conditions apply.</p>
+  </div>
+</section>
+
 <section class="process" id="process">
   <div class="wrap">
     <div class="reveal">
@@ -582,7 +632,7 @@ footer{padding:48px 0;font-size:14px;color:var(--ink-soft)}
     </div>
     <div class="reveal">
       <div class="conds">
-        <span>Cervical &amp; lumbar spondylosis</span><span>Back, neck &amp; joint pain</span><span>Stress &amp; anxiety</span><span>Sleep problems</span><span>Digestive disorders</span><span>Obesity &amp; weight management</span><span>Diabetes &amp; blood pressure (lifestyle support)</span><span>Headache &amp; migraine</span><span>Fatigue &amp; low energy</span><span>Women's health</span><span>Whole-body detox</span>
+        <span>Cervical &amp; lumbar spondylosis</span><span>Back, neck &amp; joint pain</span><span>Stress &amp; anxiety</span><span>Sleep problems</span><span>Digestive disorders</span><span>Obesity &amp; weight management</span><span>Diabetes &amp; blood pressure (lifestyle support)</span><span>Headache &amp; migraine</span><span>Fatigue &amp; low energy</span><span>Women's health</span><span>Pregnancy care (Garbh Sanskar)</span><span>Whole-body detox</span>
       </div>
       <p class="note">Naturopathy works alongside your existing medical care. Please continue any prescribed medication unless your doctor advises otherwise.</p>
     </div>

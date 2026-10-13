@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bliss Institute of Yoga &amp; Naturopathy, Agra — Dr. Sunita Garg</title>
 <meta name="description" content="Bliss Institute of Yoga, Acupuncture and Naturopathy, Agra. Therapeutic yoga, TCM diagnosis, personalised meditation, diet and lifestyle management, counselling, magnet therapy, physiotherapy and meridian massage with Dr. Sunita Garg, practising since 1990.">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/logo-64.png">
+<link rel="apple-touch-icon" href="assets/logo-160.png">
+<meta property="og:title" content="Bliss Institute of Yoga, Acupuncture &amp; Naturopathy, Agra">
+<meta property="og:description" content="Therapeutic yoga, TCM diagnosis, acupressure, diet and lifestyle care with Dr. Sunita Garg, Agra. Since 1990.">
+<meta property="og:image" content="https://realsidg.github.io/bliss-institute/assets/logo-512.png">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;1,6..72,300;1,6..72,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
@@ -34,7 +40,7 @@ header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper
 header.scrolled{border-color:var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand-mark{width:38px;height:38px}
+.brand-mark{width:52px;height:52px;border-radius:50%;box-shadow:0 2px 10px rgba(31,42,36,.15)}
 .brand b{font:600 20px/1 var(--serif)}
 .brand small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:4px}
 .nav ul{display:flex;gap:30px;list-style:none;font-size:15px;font-weight:500}
@@ -69,7 +75,7 @@ header.scrolled{border-color:var(--line)}
 .about{background:var(--paper-2)}
 .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
 .portrait{border-radius:24px;background:var(--forest);color:var(--paper);padding:40px;position:relative;overflow:hidden}
-.portrait .initials{font:300 120px/1 var(--serif);color:var(--saffron-soft)}
+.portrait-logo{width:140px;height:140px;border-radius:50%;box-shadow:0 0 0 6px rgba(246,241,231,.12)}
 .portrait h3{font-size:32px;margin:18px 0 4px}
 .portrait p{opacity:.8;font-size:15px}
 .portrait ul{list-style:none;margin-top:28px;border-top:1px solid rgba(246,241,231,.2)}
@@ -234,6 +240,8 @@ footer{padding:48px 0;font-size:14px;color:var(--ink-soft)}
 .foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
 .foot nav{display:flex;gap:22px}
 .foot a{text-decoration:none}
+.foot-brand{display:flex;align-items:center;gap:14px}
+.foot-brand img{width:44px;height:44px;border-radius:50%}
 .foot a:hover{color:var(--ink)}
 
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
@@ -270,12 +278,7 @@ footer{padding:48px 0;font-size:14px;color:var(--ink-soft)}
 <header id="top">
   <div class="wrap nav">
     <a class="brand" href="#top" aria-label="Bliss Institute home">
-      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-        <circle cx="20" cy="20" r="19" fill="#2f4a3a"/>
-        <path d="M20 9c3.5 4 3.5 10 0 14-3.5-4-3.5-10 0-14Z" fill="#e9c79c"/>
-        <path d="M20 23c-5-.5-8.5-4-9.5-8.5 4.5.3 8 3 9.5 8.5Zm0 0c5-.5 8.5-4 9.5-8.5-4.5.3-8 3-9.5 8.5Z" fill="#c9772b"/>
-        <path d="M11 29h18" stroke="#f6f1e7" stroke-width="1.5" stroke-linecap="round"/>
-      </svg>
+      <img class="brand-mark" src="assets/logo-160.png" width="52" height="52" alt="Bliss Institute of Yoga &amp; Naturopathy logo">
       <span><b>Bliss Institute</b><small>Yoga · Acupuncture · Naturopathy</small></span>
     </a>
     <ul id="menu">
@@ -335,7 +338,7 @@ footer{padding:48px 0;font-size:14px;color:var(--ink-soft)}
 <section class="about" id="about">
   <div class="wrap about-grid">
     <aside class="portrait reveal">
-      <div class="initials">SG</div>
+      <img class="portrait-logo" src="assets/logo-512.png" width="140" height="140" alt="Bliss Institute of Yoga &amp; Naturopathy logo" loading="lazy">
       <h3>Dr. Sunita Garg</h3>
       <p>Founder &amp; Director, Bliss Institute of Yoga, Acupuncture and Naturopathy</p>
       <ul>
@@ -642,7 +645,7 @@ footer{padding:48px 0;font-size:14px;color:var(--ink-soft)}
 
 <footer>
   <div class="wrap foot">
-    <span>© <span id="yr">2026</span> Bliss Institute of Yoga, Acupuncture &amp; Naturopathy, Agra</span>
+    <span class="foot-brand"><img src="assets/logo-160.png" width="44" height="44" alt="" loading="lazy">© <span id="yr">2026</span> Bliss Institute of Yoga, Acupuncture &amp; Naturopathy, Agra</span>
     <nav><a href="#about">About</a><a href="#services">Therapies</a><a href="#visit">Contact</a></nav>
   </div>
 </footer>

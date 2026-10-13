@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bliss Institute of Yoga &amp; Naturopathy, Agra — Dr. Sunita Garg</title>
+<meta name="description" content="Bliss Institute of Yoga, Acupuncture and Naturopathy, Agra. Therapeutic yoga, TCM diagnosis, personalised meditation, diet and lifestyle management, counselling, magnet therapy, physiotherapy and meridian massage with Dr. Sunita Garg, practising since 1990.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;1,6..72,300;1,6..72,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f1e7; --paper-2:#efe7d6; --ink:#1f2a24; --ink-soft:#4a564f;
+  --forest:#2f4a3a; --forest-deep:#1d3226; --saffron:#c9772b; --saffron-soft:#e9c79c;
+  --line:rgba(31,42,36,.14); --card:#fbf8f2;
+  --serif:"Newsreader",Georgia,serif; --sans:"Manrope",system-ui,sans-serif;
+  --wrap:min(1160px,100% - 32px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:var(--wrap);margin-inline:auto}
+.eyebrow{font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--saffron)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacing:-.01em}
+h2{font-size:clamp(34px,5vw,56px);margin:14px 0 20px}
+h3{font-size:24px;margin-bottom:8px}
+p.lead{font-size:19px;color:var(--ink-soft);max-width:60ch}
+section{padding:clamp(72px,10vw,128px) 0}
+
+/* nav */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.scrolled{border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{width:38px;height:38px}
+.brand b{font:600 20px/1 var(--serif)}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:4px}
+.nav ul{display:flex;gap:30px;list-style:none;font-size:15px;font-weight:500}
+.nav ul a{text-decoration:none;opacity:.8}
+.nav ul a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;background:var(--forest);color:var(--paper);text-decoration:none;font-weight:600;font-size:15px;transition:transform .2s,background .2s}
+.btn:hover{background:var(--forest-deep);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.menu-btn{display:none;background:none;border:0;font:600 15px var(--sans);color:var(--ink);cursor:pointer}
+
+/* hero */
+.hero{padding:clamp(48px,7vw,96px) 0 clamp(72px,9vw,120px);position:relative}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(46px,7.4vw,96px);font-weight:300}
+.hero h1 em{font-style:italic;color:var(--forest)}
+.hero p.lead{margin:28px 0 36px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+.hero-meta{display:flex;gap:40px;margin-top:56px;padding-top:28px;border-top:1px solid var(--line);flex-wrap:wrap}
+.hero-meta div b{display:block;font:400 34px/1 var(--serif);color:var(--forest)}
+.hero-meta div span{font-size:14px;color:var(--ink-soft)}
+.hero-art{aspect-ratio:4/5;border-radius:240px 240px 24px 24px;background:radial-gradient(120% 80% at 50% 0%,#3e6450 0%,var(--forest-deep) 70%);position:relative;overflow:hidden}
+.hero-art svg{position:absolute;inset:0;width:100%;height:100%}
+.hero-art .tag{position:absolute;left:20px;right:20px;bottom:20px;background:var(--paper);border-radius:16px;padding:16px 18px;font-size:14px;color:var(--ink-soft)}
+.hero-art .tag b{display:block;color:var(--ink);font:600 17px var(--serif)}
+.pulse{transform-origin:200px 160px;animation:breathe 7s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:scale(.94);opacity:.7}50%{transform:scale(1.04);opacity:1}}
+.flow{stroke-dasharray:6 10;animation:flow 14s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-320}}
+
+/* about */
+.about{background:var(--paper-2)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.portrait{border-radius:24px;background:var(--forest);color:var(--paper);padding:40px;position:relative;overflow:hidden}
+.portrait .initials{font:300 120px/1 var(--serif);color:var(--saffron-soft)}
+.portrait h3{font-size:32px;margin:18px 0 4px}
+.portrait p{opacity:.8;font-size:15px}
+.portrait ul{list-style:none;margin-top:28px;border-top:1px solid rgba(246,241,231,.2)}
+.portrait li{padding:12px 0;border-bottom:1px solid rgba(246,241,231,.2);font-size:15px;display:flex;justify-content:space-between;gap:16px}
+.portrait li span:last-child{opacity:.7;text-align:right}
+.about-text p{margin-bottom:18px;color:var(--ink-soft)}
+.about-text p:first-of-type{font:400 24px/1.45 var(--serif);color:var(--ink)}
+.quote{margin-top:32px;padding-left:22px;border-left:2px solid var(--saffron);font:italic 300 22px/1.5 var(--serif)}
+
+/* philosophy */
+.philo-head{max-width:880px;margin-bottom:64px}
+.philo-title{font-size:clamp(38px,5.6vw,68px);font-weight:300}
+.philo-title em{font-style:italic;color:var(--saffron)}
+.philo-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.wheel{margin:0}
+.wheel svg{width:100%;max-width:520px;margin-inline:auto;overflow:visible}
+.wheel figcaption{text-align:center;font-size:14px;color:var(--ink-soft);margin-top:14px;max-width:44ch;margin-inline:auto}
+.w-core{font:400 19px var(--serif);fill:var(--paper)}
+.w-core-sm{font:500 10px var(--sans);letter-spacing:.16em;text-transform:uppercase;fill:var(--saffron-soft)}
+.w-org{font:600 18px var(--serif)}
+.w-sub{font:500 10px var(--sans);letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.sheng{fill:none;stroke:#2f4a3a;stroke-width:2.2}
+.ke{stroke:#c9772b;stroke-width:1.8;stroke-dasharray:6 5;animation:flow 10s linear infinite}
+.pulse2{transform-origin:260px 260px;animation:breathe 6s ease-in-out infinite}
+.el circle{transition:transform .3s;transform-box:fill-box;transform-origin:center}
+.el:hover circle{transform:scale(1.08)}
+.legend{display:grid;gap:8px;justify-items:start;width:fit-content;margin-inline:auto;margin-top:18px;font-size:14px;color:var(--ink-soft)}
+.legend span{display:flex;align-items:center;gap:10px}
+.legend svg{width:40px;height:10px;flex:none}
+.legend i{font-style:normal}
+.legend b{color:var(--ink);font-weight:600}
+.pillars{display:grid;gap:14px}
+.pillar{display:grid;grid-template-columns:52px 1fr;gap:20px;padding:24px 26px;border-radius:20px;background:var(--card);border:1px solid var(--line);transition:transform .3s,border-color .3s}
+.pillar:hover{transform:translateX(4px);border-color:var(--saffron)}
+.pillar svg{width:44px;height:44px;color:var(--forest)}
+.pillar h3{font-size:21px;margin-bottom:4px}
+.pillar p{font-size:15px;color:var(--ink-soft)}
+.relax{margin-top:72px;border-radius:28px;background:var(--forest);color:var(--paper);padding:clamp(32px,5vw,56px);display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}
+.relax h3{font-size:clamp(28px,3.4vw,40px);margin:14px 0 14px;font-weight:300}
+.relax p{color:rgba(246,241,231,.8)}
+.relax-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.relax-chips span{padding:8px 16px;border-radius:999px;border:1px solid rgba(233,199,156,.45);font-size:14px;color:var(--saffron-soft)}
+.balance{width:100%;max-width:300px;margin-inline:auto}
+.beam{transform-origin:150px 60px;animation:sway 6s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+.b-lab{font:500 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;fill:var(--saffron-soft)}
+.relax-foot{grid-column:1/-1;padding-top:24px;border-top:1px solid rgba(246,241,231,.18);font:italic 300 20px/1.5 var(--serif)}
+@media (prefers-reduced-motion:reduce){.pulse2,.ke,.beam{animation:none}}
+@media (max-width:960px){.philo-grid,.relax{grid-template-columns:1fr}}
+
+/* services */
+.svc-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:56px;flex-wrap:wrap}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.svc{padding:36px 32px 40px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper);transition:background .3s}
+.svc:hover{background:var(--card)}
+.svc .num{font:400 14px var(--serif);color:var(--saffron);margin-bottom:28px;display:block}
+.svc p{color:var(--ink-soft);font-size:16px}
+.svc.feature{grid-column:span 2;background:var(--forest);color:var(--paper)}
+.svc.feature p{color:rgba(246,241,231,.8)}
+.svc.feature .num{color:var(--saffron-soft)}
+.svc.feature h3{font-size:34px}
+.svc.cta{grid-column:span 2;background:var(--saffron-soft)}
+.svc.cta p{color:var(--ink)}
+.svc.cta .num{color:var(--forest)}
+
+/* process */
+.process{background:var(--forest-deep);color:var(--paper)}
+.process .lead{color:rgba(246,241,231,.75)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:64px;counter-reset:s}
+.step{position:relative;padding-top:34px;border-top:1px solid rgba(246,241,231,.25)}
+.step::before{counter-increment:s;content:"0" counter(s);position:absolute;top:-14px;left:0;background:var(--forest-deep);padding-right:12px;font:400 22px/1 var(--serif);color:var(--saffron-soft)}
+.step h3{font-size:22px}
+.step p{color:rgba(246,241,231,.72);font-size:15px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:72px}
+.fact{border:1px solid rgba(246,241,231,.2);border-radius:20px;padding:28px}
+.fact b{display:block;font:300 48px/1 var(--serif);color:var(--saffron-soft);margin-bottom:10px}
+.fact span{font-size:15px;color:rgba(246,241,231,.78)}
+
+/* conditions */
+.conds{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}
+.conds span{padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-size:15px}
+.cond-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.note{font-size:14px;color:var(--ink-soft);margin-top:24px}
+
+/* reviews */
+.rev-head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap;margin-bottom:48px}
+.rating{display:flex;align-items:center;gap:16px;text-decoration:none;padding:16px 24px;border-radius:20px;background:var(--card);border:1px solid var(--line);transition:border-color .3s}
+.rating:hover{border-color:var(--saffron)}
+.rating>b{font:300 56px/1 var(--serif);color:var(--forest)}
+.rating small{display:block;font-size:13px;color:var(--ink-soft);margin-top:4px}
+.stars{display:flex;gap:2px}
+.stars svg{width:18px;height:18px;fill:var(--saffron)}
+.rev-grid{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:20px;align-items:stretch}
+.rev{margin:0;display:flex;flex-direction:column;justify-content:space-between;gap:28px;padding:32px;border-radius:24px;background:var(--card);border:1px solid var(--line);position:relative}
+.rev::before{content:"\201C";position:absolute;top:8px;right:24px;font:300 96px/1 var(--serif);color:var(--saffron-soft)}
+.rev blockquote{font:400 18px/1.55 var(--serif);color:var(--ink);position:relative}
+.rev.feature{background:var(--forest);border-color:var(--forest)}
+.rev.feature blockquote{color:var(--paper);font-size:20px}
+.rev.feature::before{color:rgba(233,199,156,.35)}
+.rev.feature figcaption b{color:var(--paper)} .rev.feature figcaption small{color:rgba(246,241,231,.65)}
+.rev figcaption{display:flex;align-items:center;gap:12px}
+.rev figcaption b{display:block;font-weight:600;font-size:15px}
+.rev figcaption small{font-size:13px;color:var(--ink-soft)}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--saffron-soft);color:var(--forest-deep);font:600 17px var(--serif);flex:none}
+.rev-strip{display:grid;grid-template-columns:repeat(3,1fr);margin-top:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rev-strip p{padding:24px 24px 24px 0;font:italic 300 18px/1.5 var(--serif);color:var(--ink-soft)}
+.rev-strip p+p{padding-left:24px;border-left:1px solid var(--line)}
+.rev-ctas{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:32px}
+.rev-tags{font-size:14px;color:var(--ink-soft)}
+.rev-tags i{font-style:normal;color:var(--ink)}
+@media (max-width:960px){.rev-grid,.rev-strip{grid-template-columns:1fr}.rev-strip p+p{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+
+/* visit */
+.visit{background:var(--paper-2)}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
+.info{background:var(--card);border-radius:24px;padding:40px;border:1px solid var(--line)}
+.info dl{display:grid;gap:24px;margin:28px 0 32px}
+.info dt{font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--saffron);margin-bottom:6px}
+.info dd{font-size:17px}
+.info dd a{text-decoration:none;border-bottom:1px solid var(--line)}
+.map{border-radius:24px;overflow:hidden;min-height:420px;border:1px solid var(--line);background:var(--paper)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:saturate(.7) sepia(.15)}
+
+footer{padding:48px 0;font-size:14px;color:var(--ink-soft)}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+.foot nav{display:flex;gap:22px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--ink)}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.pulse,.flow{animation:none}}
+
+@media (max-width:960px){
+  .hero-grid,.about-grid,.cond-grid,.visit-grid{grid-template-columns:1fr;gap:48px}
+  .hero-art{max-width:420px;width:100%;margin-inline:auto}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .svc.feature{grid-column:span 2}
+  .steps{grid-template-columns:1fr 1fr;row-gap:48px}
+  .facts{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .nav ul{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 16px 16px}
+  .nav ul.open{display:flex}
+  .nav ul li a{display:block;padding:12px 0}
+  .menu-btn{display:block}
+  .nav .btn{display:none}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .svc-grid{grid-template-columns:1fr}
+  .svc.feature,.svc.cta{grid-column:auto}
+  .steps{grid-template-columns:1fr}
+  .info,.portrait{padding:28px}
+  .hero-meta{gap:28px}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Bliss Institute home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#2f4a3a"/>
+        <path d="M20 9c3.5 4 3.5 10 0 14-3.5-4-3.5-10 0-14Z" fill="#e9c79c"/>
+        <path d="M20 23c-5-.5-8.5-4-9.5-8.5 4.5.3 8 3 9.5 8.5Zm0 0c5-.5 8.5-4 9.5-8.5-4.5.3-8 3-9.5 8.5Z" fill="#c9772b"/>
+        <path d="M11 29h18" stroke="#f6f1e7" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span><b>Bliss Institute</b><small>Yoga · Acupuncture · Naturopathy</small></span>
+    </a>
+    <ul id="menu">
+      <li><a href="#about">Dr. Sunita Garg</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#services">Therapies</a></li>
+      <li><a href="#process">How it works</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn" href="tel:+918958956439">Book a consultation</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Agra · Since 1990</span>
+      <h1 style="margin-top:18px">Healing that begins with <em>understanding you.</em></h1>
+      <p class="lead">Bliss Institute of Yoga &amp; Naturopathy offers therapeutic yoga, Traditional Chinese Medicine diagnosis and individually designed treatment plans to detox body and mind, manage chronic illness and build a healthier way of living.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="tel:+918958956439">Call +91 89589 56439</a>
+        <a class="btn ghost" href="#services">Explore therapies</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>35+</b><span>years of practice</span></div>
+        <div><b>1 : 1</b><span>personalised sessions</span></div>
+        <div><b>60 min</b><span>per session</span></div>
+        <div><b>4.9★</b><span><a href="#reviews" style="text-decoration:none">44 Google reviews</a></span></div>
+      </div>
+    </div>
+    <div class="hero-art reveal" aria-hidden="true">
+      <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+        <g class="pulse">
+          <circle cx="200" cy="160" r="120" fill="none" stroke="#e9c79c" stroke-opacity=".25"/>
+          <circle cx="200" cy="160" r="84" fill="none" stroke="#e9c79c" stroke-opacity=".4"/>
+          <circle cx="200" cy="160" r="46" fill="#c9772b" fill-opacity=".9"/>
+        </g>
+        <!-- seated figure -->
+        <circle cx="200" cy="206" r="18" fill="#f6f1e7"/>
+        <path d="M200 228c-22 0-34 18-36 46l-2 26h76l-2-26c-2-28-14-46-36-46Z" fill="#f6f1e7"/>
+        <path d="M110 318c30-22 60-26 90-20 30-6 60-2 90 20-30 12-60 14-90 8-30 6-60 4-90-8Z" fill="#f6f1e7"/>
+        <path d="M168 262c-14 14-26 30-28 46M232 262c14 14 26 30 28 46" stroke="#f6f1e7" stroke-width="12" stroke-linecap="round" fill="none"/>
+        <!-- meridian lines -->
+        <path class="flow" d="M200 100 C 200 200, 200 260, 200 330" stroke="#e9c79c" stroke-width="1.6" fill="none"/>
+        <path class="flow" d="M40 420 C 120 360, 160 380, 200 340 S 300 360, 360 420" stroke="#e9c79c" stroke-opacity=".6" stroke-width="1.4" fill="none"/>
+        <path class="flow" d="M20 470 C 120 400, 170 430, 200 390 S 300 420, 380 470" stroke="#e9c79c" stroke-opacity=".35" stroke-width="1.2" fill="none"/>
+        <g fill="#c9772b"><circle cx="200" cy="244" r="3.5"/><circle cx="200" cy="272" r="3.5"/><circle cx="200" cy="300" r="3.5"/></g>
+      </svg>
+      <div class="tag"><b>Dr. Sunita Garg</b>Consultant Naturopath, Acupuncturist &amp; Yoga Therapist</div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <aside class="portrait reveal">
+      <div class="initials">SG</div>
+      <h3>Dr. Sunita Garg</h3>
+      <p>Founder &amp; Director, Bliss Institute of Yoga, Acupuncture and Naturopathy</p>
+      <ul>
+        <li><span>Practising since</span><span>1990</span></li>
+        <li><span>Disciplines</span><span>Naturopathy, Acupuncture, Yoga, TCM</span></li>
+        <li><span>Training</span><span>Institute of Acupuncture, Aurangabad</span></li>
+        <li><span>Community</span><span>Sri Aurobindo Society, Agra Branch</span></li>
+      </ul>
+    </aside>
+    <div class="about-text reveal">
+      <span class="eyebrow">About the doctor</span>
+      <h2>Three decades of drug-free, whole-person care in Agra.</h2>
+      <p>Dr. Sunita Garg has led the Bliss Institute in Agra since 1990, combining naturopathy, acupuncture, therapeutic yoga and Traditional Chinese Medicine into a single, personal approach to health.</p>
+      <p>No two people arrive with the same story. Every patient begins with a careful TCM diagnosis and a conversation about their life, habits and circumstances. From that, Dr. Garg designs a programme of yoga, diet, meditation, counselling and bodywork for that one person.</p>
+      <p>The institute also hosts the Agra branch of the Sri Aurobindo Society, reflecting a belief that real healing reaches the mind and spirit as well as the body. Dr. Garg shares talks on conditions such as cervical spondylosis on her YouTube channel, <a href="https://www.youtube.com/@sunitagarg173" target="_blank" rel="noopener">Dr. Sunita Bliss</a>.</p>
+      <p class="quote">Our principle: treat the person, not only the problem.</p>
+    </div>
+  </div>
+</section>
+
+<section class="philo" id="philosophy">
+  <div class="wrap">
+    <div class="philo-head reveal">
+      <span class="eyebrow">Our philosophy</span>
+      <h2 class="philo-title">Every disease is the outer sign of an <em>inner disharmony.</em></h2>
+      <p class="lead">Illness shows up when mind and body fall out of balance. Unless the inner disorder is healed, no outer cure can last. So at Bliss we don't fight one symptom at a time. We help the body heal itself.</p>
+    </div>
+
+    <div class="philo-grid">
+      <figure class="wheel reveal" aria-label="Five Elements diagram: the generating cycle Fire, Earth, Metal, Water, Wood around the circle, and the controlling cycle as a five-pointed star">
+        <svg viewBox="0 0 520 520">
+          <defs>
+            <marker id="ah-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10z" fill="#2f4a3a"/></marker>
+            <marker id="ah-s" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10z" fill="#c9772b"/></marker>
+            <radialGradient id="core" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#e9c79c"/><stop offset="1" stop-color="#e9c79c" stop-opacity="0"/></radialGradient>
+          </defs>
+          <circle cx="260" cy="260" r="244" fill="none" stroke="#2f4a3a" stroke-opacity=".1"/>
+          <circle class="pulse2" cx="260" cy="260" r="96" fill="url(#core)" opacity=".7"/>
+          <path class="sheng" d="M312.6 87.9 A180 180 0 0 1 403.8 151.7" marker-end="url(#ah-g)"/>
+          <path class="sheng" d="M440.0 256.9 A180 180 0 0 1 407.4 363.2" marker-end="url(#ah-g)"/>
+          <path class="sheng" d="M318.6 430.2 A180 180 0 0 1 207.4 432.1" marker-end="url(#ah-g)"/>
+          <path class="sheng" d="M116.2 368.3 A180 180 0 0 1 80.0 263.1" marker-end="url(#ah-g)"/>
+          <path class="sheng" d="M112.6 156.8 A180 180 0 0 1 201.4 89.8" marker-end="url(#ah-g)"/>
+          <line class="ke" x1="276.1" y1="129.5" x2="348.5" y2="352.4" marker-end="url(#ah-s)"/>
+          <line class="ke" x1="389.1" y1="234.9" x2="199.5" y2="372.7" marker-end="url(#ah-s)"/>
+          <line class="ke" x1="323.7" y1="375.1" x2="134.1" y2="237.3" marker-end="url(#ah-s)"/>
+          <line class="ke" x1="170.3" y1="356.2" x2="242.7" y2="133.3" marker-end="url(#ah-s)"/>
+          <line class="ke" x1="140.8" y1="204.4" x2="375.2" y2="204.4" marker-end="url(#ah-s)"/>
+          <g class="el"><circle cx="260.0" cy="80.0" r="46" fill="#c4553a"/><text x="260.0" y="79.0" text-anchor="middle" class="w-org" fill="#f6f1e7">Fire</text><text x="260.0" y="97.0" text-anchor="middle" class="w-sub" fill="#f6f1e7">Heart</text></g>
+          <g class="el"><circle cx="431.2" cy="204.4" r="46" fill="#d4a23c"/><text x="431.2" y="203.4" text-anchor="middle" class="w-org" fill="#1f2a24">Earth</text><text x="431.2" y="221.4" text-anchor="middle" class="w-sub" fill="#1f2a24">Spleen</text></g>
+          <g class="el"><circle cx="365.8" cy="405.6" r="46" fill="#d9d4c7"/><text x="365.8" y="404.6" text-anchor="middle" class="w-org" fill="#1f2a24">Metal</text><text x="365.8" y="422.6" text-anchor="middle" class="w-sub" fill="#1f2a24">Lungs</text></g>
+          <g class="el"><circle cx="154.2" cy="405.6" r="46" fill="#2e4c66"/><text x="154.2" y="404.6" text-anchor="middle" class="w-org" fill="#f6f1e7">Water</text><text x="154.2" y="422.6" text-anchor="middle" class="w-sub" fill="#f6f1e7">Kidneys</text></g>
+          <g class="el"><circle cx="88.8" cy="204.4" r="46" fill="#4f7d55"/><text x="88.8" y="203.4" text-anchor="middle" class="w-org" fill="#f6f1e7">Wood</text><text x="88.8" y="221.4" text-anchor="middle" class="w-sub" fill="#f6f1e7">Liver</text></g>
+          <circle cx="260" cy="260" r="44" fill="#2f4a3a"/>
+          <text x="260" y="257" text-anchor="middle" class="w-core">One body</text>
+          <text x="260" y="275" text-anchor="middle" class="w-core-sm">one unit</text>
+        </svg>
+        <div class="legend">
+          <span><svg viewBox="0 0 40 10" aria-hidden="true"><path d="M2 5h30" stroke="#2f4a3a" stroke-width="2"/><path d="M30 1l8 4-8 4z" fill="#2f4a3a"/></svg><i><b>Generating cycle</b> (Sheng): each element nourishes the next</i></span>
+          <span><svg viewBox="0 0 40 10" aria-hidden="true"><path d="M2 5h30" stroke="#c9772b" stroke-width="2" stroke-dasharray="4 3"/><path d="M30 1l8 4-8 4z" fill="#c9772b"/></svg><i><b>Controlling cycle</b> (Ke, “destructive”): each element restrains another</i></span>
+        </div>
+        <figcaption>When an organ is in excess or in deficit, the whole cycle is affected. By redirecting energy along these pathways, one treatment can restore balance to the entire system.</figcaption>
+      </figure>
+
+      <div class="pillars">
+        <article class="pillar reveal">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6c8 10 12 17 12 23a12 12 0 0 1-24 0c0-6 4-13 12-23Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 30a6 6 0 0 0 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <div><h3>Detox &amp; cleansing</h3><p>The body has its own healing mechanism. Cleansing clears what blocks it, so it can do its work.</p></div>
+        </article>
+        <article class="pillar reveal">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="5" fill="currentColor"/><circle cx="24" cy="24" r="12" fill="none" stroke="currentColor" stroke-width="2"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <div><h3>Pranic energy through acupressure</h3><p>Acupressure stimulates the organs and gives them pranic energy.</p></div>
+        </article>
+        <article class="pillar reveal">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 30c6-12 26-12 32 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M34 24l6 6-7 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="34" r="4" fill="currentColor"/><circle cx="38" cy="34" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <div><h3>Balancing excess &amp; deficit</h3><p>Excess energy in one organ is moved to an organ that lacks it. Two diseases that look unrelated can often be treated with a single treatment.</p></div>
+        </article>
+        <article class="pillar reveal">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5 40 11v12c0 10-7 17-16 20C15 40 8 33 8 23V11Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m17 24 5 5 9-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Immunity for life</h3><p>We treat the whole body, not one disease, and strengthen the immune system for the years ahead.</p></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="relax reveal">
+      <div class="relax-text">
+        <span class="eyebrow" style="color:var(--saffron-soft)">Fit forever</span>
+        <h3>Learning to relax matters as much as learning to work out.</h3>
+        <p>Along with diet and lifestyle guidance, every patient learns meditation and relaxation methods. This calm is what helps with stress-related diseases.</p>
+        <div class="relax-chips"><span>Hypertension</span><span>Heart disease</span><span>Insomnia</span><span>Allergies</span><span>Autoimmune disorders</span></div>
+      </div>
+      <svg class="balance" viewBox="0 0 300 200" aria-hidden="true">
+        <line x1="150" y1="40" x2="150" y2="170" stroke="#e9c79c" stroke-width="2"/>
+        <path d="M120 176h60" stroke="#e9c79c" stroke-width="2" stroke-linecap="round"/>
+        <g class="beam"><line x1="40" y1="60" x2="260" y2="60" stroke="#e9c79c" stroke-width="2" stroke-linecap="round"/>
+          <path d="M40 60 20 110h40Z M260 60l-20 50h40Z" fill="none" stroke="#e9c79c" stroke-opacity=".5"/>
+          <path d="M18 112a22 10 0 0 0 44 0Z M238 112a22 10 0 0 0 44 0Z" fill="#c9772b"/>
+          <text x="40" y="140" text-anchor="middle" class="b-lab">Work</text><text x="260" y="140" text-anchor="middle" class="b-lab">Relax</text></g>
+        <circle cx="150" cy="40" r="6" fill="#e9c79c"/>
+      </svg>
+      <p class="relax-foot">Through cleansing and detox, we have seen real improvement even in autoimmune disorders that modern medicine often calls untreatable.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="svc-head reveal">
+      <div>
+        <span class="eyebrow">Therapies &amp; services</span>
+        <h2>Every plan is written for one person.</h2>
+      </div>
+      <p class="lead" style="max-width:42ch">We match each therapy to your diagnosis, your life situation and the depth of the problem, then adjust it as you progress.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc feature reveal">
+        <span class="num">Signature</span>
+        <h3>Therapeutic Meridian Massage</h3>
+        <p>Our specialised detox of mind and body. Meridian massage works along the energy channels mapped in Traditional Chinese Medicine. Each session is individualised after your TCM diagnosis, so pressure, sequence and focus change with what your body needs. A course is usually 10–15 sessions for chronic conditions, followed by periodic maintenance sessions.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num">01</span>
+        <h3>TCM Diagnosis</h3>
+        <p>Traditional Chinese Medicine assessment of pulse, tongue and meridian balance to find the root of the imbalance, not only the symptom.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num">02</span>
+        <h3>Therapeutic Yoga</h3>
+        <p>A yoga plan for your particular problem, whether back and neck pain, stress, sleep or metabolic issues, taught one-to-one so you can continue at home.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num">03</span>
+        <h3>Diet &amp; Lifestyle Management</h3>
+        <p>Naturopathic diet guidance and daily routines that support recovery and help prevent illness from coming back.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num">04</span>
+        <h3>Personalised Meditation</h3>
+        <p>Meditation and breathing practices chosen for your temperament and situation, to calm the mind and steady the nervous system.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num">05</span>
+        <h3>Counselling</h3>
+        <p>Guidance for the life situations behind many health problems: stress, relationships, transitions and emotional strain.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num">06</span>
+        <h3>Acupuncture &amp; Acupressure</h3>
+        <p>Point-based therapy grounded in Dr. Garg's acupuncture training, used to relieve pain and restore the flow of energy.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num">07</span>
+        <h3>Magnet Therapy</h3>
+        <p>Gentle, non-invasive magnetotherapy used alongside other treatments to ease pain and support circulation.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="num">08</span>
+        <h3>Physiotherapy</h3>
+        <p>Exercise and rehabilitation for joints, muscles and mobility, combined with yoga for a lasting result.</p>
+      </article>
+      <article class="svc cta reveal">
+        <span class="num">Not sure where to start?</span>
+        <h3>Begin with a consultation.</h3>
+        <p>Tell us what you're facing. After the diagnosis, Dr. Garg will recommend the combination of therapies that fits you.</p>
+        <a class="btn" href="tel:+918958956439" style="margin-top:22px">Call +91 89589 56439</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" style="color:var(--saffron-soft)">How treatment works</span>
+      <h2>A clear path, at your own pace.</h2>
+      <p class="lead">Chronic problems take time to build and time to undo. Here is what a typical programme at Bliss looks like.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Consultation &amp; TCM diagnosis</h3><p>We listen to your history and present situation, and assess you through Traditional Chinese Medicine.</p></div>
+      <div class="step reveal"><h3>Your personal plan</h3><p>A combination of yoga, diet, meditation, counselling and therapies chosen for you.</p></div>
+      <div class="step reveal"><h3>Course of sessions</h3><p>Usually 10–15 one-hour sessions for chronic conditions, with personalised teaching in each one.</p></div>
+      <div class="step reveal"><h3>Maintenance</h3><p>Follow-up sessions at longer intervals, so the results last and you stay independent.</p></div>
+    </div>
+    <div class="facts">
+      <div class="fact reveal"><b>10–15</b><span>sessions is a typical course for chronic diseases</span></div>
+      <div class="fact reveal"><b>1 hour</b><span>per session, one-to-one with personalised teaching</span></div>
+      <div class="fact reveal"><b>100%</b><span>individualised, with each plan based on your own diagnosis</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap cond-grid">
+    <div class="reveal">
+      <span class="eyebrow">Who we help</span>
+      <h2>For personal health problems and everyday wellbeing.</h2>
+      <p class="lead">People come to Bliss for long-standing conditions that haven't settled with other treatment, and for help building a healthier, calmer life.</p>
+    </div>
+    <div class="reveal">
+      <div class="conds">
+        <span>Cervical &amp; lumbar spondylosis</span><span>Back, neck &amp; joint pain</span><span>Stress &amp; anxiety</span><span>Sleep problems</span><span>Digestive disorders</span><span>Obesity &amp; weight management</span><span>Diabetes &amp; blood pressure (lifestyle support)</span><span>Headache &amp; migraine</span><span>Fatigue &amp; low energy</span><span>Women's health</span><span>Whole-body detox</span>
+      </div>
+      <p class="note">Naturopathy works alongside your existing medical care. Please continue any prescribed medication unless your doctor advises otherwise.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="rev-head reveal">
+      <div>
+        <span class="eyebrow">Patient reviews</span>
+        <h2>In our patients' words.</h2>
+      </div>
+      <a class="rating" href="https://maps.google.com/?cid=5604306354978857117" target="_blank" rel="noopener" aria-label="Rated 4.9 out of 5 from 44 Google reviews">
+        <b>4.9</b>
+        <span><span class="stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8Z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8Z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8Z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8Z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 1.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8L1.5 7.7l5.9-.8Z"/></svg></span><small>44 reviews on Google</small></span>
+      </a>
+    </div>
+    <div class="rev-grid">
+      <figure class="rev reveal">
+        <blockquote>I visited this place due to extreme stress, anxiety and back pain. Dr Sunita understood my problem and caught the root cause of it. My treatment not only focused on my physical well being but also the mental balance and peace, through different yogic techniques like pranayama and meditation and acupuncture, my mind and my body is calmer than before. Mam explains everything with a lot of patience and understanding and make you feel at ease.</blockquote>
+        <figcaption><span class="av">S</span><span><b>Saloni</b><small>Google review</small></span></figcaption>
+      </figure>
+      <figure class="rev feature reveal">
+        <blockquote>I visited Bliss Institute of Yoga, Acupuncture and Naturopathy for my persistent back pain, and the experience has been truly life-changing. … After just a few acupressure sessions here, I began to feel real relief. Dr Sunita Garg was not only skilled but also deeply caring and attentive. … Each session left me feeling lighter, calmer, and more balanced, not just physically but emotionally too.</blockquote>
+        <figcaption><span class="av">V</span><span><b>Vanda Jain</b><small>Google review</small></span></figcaption>
+      </figure>
+      <figure class="rev reveal">
+        <blockquote>If one is looking for a holistic treatment for the body and mind, Bliss Yoga &amp; Naturopathy Centre is the right place to visit. My family and I have been taking treatment here for various ailments, and the diagnosis by Dr. Sunita Garg is truly remarkable. She identifies the root cause and treats it effectively.</blockquote>
+        <figcaption><span class="av">H</span><span><b>Himani Kulshreshtha</b><small>Google review</small></span></figcaption>
+      </figure>
+    </div>
+    <div class="rev-strip reveal">
+      <p>“Yoga classes are conducted with therapeutic explanation and highly beneficial.”</p>
+      <p>“She is yoga teacher to our family n friends.”</p>
+      <p>“I hope she succeeds in her endeavour to bring people closer to nature.”</p>
+    </div>
+    <div class="rev-ctas reveal">
+      <a class="btn ghost" href="https://maps.google.com/?cid=5604306354978857117" target="_blank" rel="noopener">Read all reviews on Google</a>
+      <span class="rev-tags">Patients mention: <i>pranayam</i> · <i>holistic treatment</i> · <i>root cause treatment</i> · <i>peaceful atmosphere</i></span>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:48px">
+      <span class="eyebrow">Visit us</span>
+      <h2>Book your first consultation.</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="info reveal">
+        <p class="lead" style="font-size:17px">Call or WhatsApp to arrange a consultation with Dr. Sunita Garg.</p>
+        <dl>
+          <div><dt>Address</dt><dd>59/145 B, Ajeet Nagar, Kheria Mod<br>(near Ajit Nagar Crossing), Agra Cantt<br>Agra, Uttar Pradesh 282001</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+918958956439">+91 89589 56439</a></dd></div>
+          <div><dt>Timings</dt><dd>Monday – Saturday<br>6:00–8:00 am · 11:00 am–2:00 pm · 5:00–7:00 pm<br>Sunday closed<br><small style="color:var(--ink-soft)">Please call ahead to confirm your appointment.</small></dd></div>
+          <div><dt>Follow</dt><dd><a href="https://www.facebook.com/blissinstituteagra/" target="_blank" rel="noopener">Facebook</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/@sunitagarg173" target="_blank" rel="noopener">YouTube</a></dd></div>
+        </dl>
+        <div class="hero-ctas">
+          <a class="btn" href="https://wa.me/918958956439?text=Namaste%2C%20I%20would%20like%20to%20book%20a%20consultation%20at%20Bliss%20Institute." target="_blank" rel="noopener">WhatsApp us</a>
+          <a class="btn ghost" href="https://maps.google.com/?cid=5604306354978857117" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Map to Bliss Institute, Agra" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=27.1617678,77.9829099&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="yr">2026</span> Bliss Institute of Yoga, Acupuncture &amp; Naturopathy, Agra</span>
+    <nav><a href="#about">About</a><a href="#services">Therapies</a><a href="#visit">Contact</a></nav>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const header = document.querySelector('header');
+  addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 8), {passive:true});
+  const btn = document.querySelector('.menu-btn'), menu = document.getElementById('menu');
+  btn.addEventListener('click', () => { const o = menu.classList.toggle('open'); btn.setAttribute('aria-expanded', o); });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); btn.setAttribute('aria-expanded', false); }));
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
